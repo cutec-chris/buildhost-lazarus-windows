@@ -2,5 +2,5 @@ before_script:
   - docker info 
 build_image:   
   script:     
-    - docker build -t build-lazarus-x64 .
+    - docker build -t build-lazarus-windows .
 
