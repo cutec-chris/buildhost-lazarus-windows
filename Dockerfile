@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Bailey Stoner <monokrome@monokro.me>
 
 RUN apk update
-RUN apk add wine xvfb
+RUN apk add wine xvfb curl
 
 # Prefix commands passed into bash so that they run in xvfb
 RUN cd /tmp && \
