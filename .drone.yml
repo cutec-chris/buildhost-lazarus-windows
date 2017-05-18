@@ -1,0 +1,5 @@
+pipeline:
+  build_image:   
+    commands:     
+      - docker build -t build-lazarus-windows .
+
