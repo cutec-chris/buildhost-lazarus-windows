@@ -1,5 +1,6 @@
 pipeline:
-  build_image:   
+  build_image:  
+    image: plugins/docker
     commands:     
       - docker info
       - docker build -t build-lazarus-windows .
