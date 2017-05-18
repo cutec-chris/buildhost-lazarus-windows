@@ -1,7 +1,7 @@
 pipeline:
   build_image:  
     image: plugins/docker
-    volumes: ["/var/run/docker.sock:/docker.sock"]
+    #volumes: ["/var/run/docker.sock:/docker.sock"]
     commands:     
       - docker info
       - docker build -t build-lazarus-windows .
