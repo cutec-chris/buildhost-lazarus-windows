@@ -1,9 +1,13 @@
 pipeline:
+  build:
+    image: docker
+    commands:
+      - docker --tls=false ps
   build_image:  
     image: plugins/docker
     #volumes: ["/var/run/docker.sock:/docker.sock"]
-    privileged: true
+    #privileged: true
     commands:     
       - docker info
       - docker build -t build-lazarus-windows .
-
+      
