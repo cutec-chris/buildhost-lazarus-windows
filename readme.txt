@@ -1,1 +1,1 @@
-[![Build Status](http://192.168.177.120:10091/api/badges/continous-integration/buildhost-lazarus-windows/status.svg)](http://192.168.177.120:10091/continous-integration/buildhost-lazarus-windows)
+<a href="http://192.168.177.120:10091/continous-integration/buildhost-lazarus-windows"><img src="http://192.168.177.120:10091/api/badges/continous-integration/buildhost-lazarus-windows/status.svg"/></a>
