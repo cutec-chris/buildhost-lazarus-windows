@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine 
 MAINTAINER Bailey Stoner <monokrome@monokro.me>
 
 RUN apk update
