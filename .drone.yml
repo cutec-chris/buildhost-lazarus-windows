@@ -10,6 +10,6 @@ pipeline:
     #volumes: ["/var/run/docker.sock:/docker.sock"]
     #privileged: true
     commands:     
-      - docker info
-      - docker build -t build-lazarus-windows .
+      - docker --tls=false info
+      - docker --tls=false build -t build-lazarus-windows .
       
