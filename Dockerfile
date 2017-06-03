@@ -9,4 +9,4 @@ RUN cd /tmp && \
     curl -L "http://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Lazarus%201.6.4/lazarus-1.6.4-fpc-3.0.2-win32.exe/download" -o lazarus-inst.exe
 ENV DISPLAY :0
 RUN exec wine "/tmp/lazarus-inst.exe" "/silent /nocancel /suppressmsgboxes=no"
-#ENTRYPOINT xvfb-run -a wine
+ENTRYPOINT wine cmd
