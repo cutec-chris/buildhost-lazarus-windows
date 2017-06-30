@@ -10,5 +10,5 @@ RUN cd /tmp && \
 ENV DISPLAY :0
 RUN wine64 cmd &
 RUN Xvfb :0 -screen 0 1024x768x16 & \
-    exec wine64 "/tmp/lazarus-inst.exe" "/silent /nocancel /suppressmsgboxes=no"
+    wine64 "/tmp/lazarus-inst.exe" "/silent /nocancel /suppressmsgboxes=no"
 #ENTRYPOINT wine64 cmd
