@@ -24,7 +24,7 @@ RUN git clone https://github.com/kanaka/noVNC.git /root/noVNC \
 	&& rm -rf /root/noVNC/utils/websockify/.git \
 	&& apk del git
 
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY /etc/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Modify the launch script 'ps -p'
 RUN sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/launch.sh
