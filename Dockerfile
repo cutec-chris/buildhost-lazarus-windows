@@ -2,7 +2,7 @@ FROM psharkey/novnc
 MAINTAINER Bailey Stoner <monokrome@monokro.me>
 
 RUN apk update && \
-    apk add wine xvfb curl bash
+    apk add wine curl bash
 
 # Prefix commands passed into bash so that they run in xvfb
 RUN cd /tmp && \
