@@ -1,32 +1,42 @@
-FROM phusion/baseimage:0.9.16
-MAINTAINER archedraft
+FROM alpine
 
-# Set correct environment variables
-ENV HOME /root
-ENV DEBIAN_FRONTEND noninteractive
-ENV LC_ALL C.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
+# Setup demo environment variables
+ENV HOME=/root \
+	DEBIAN_FRONTEND=noninteractive \
+	LANG=en_US.UTF-8 \
+	LANGUAGE=en_US.UTF-8 \
+	LC_ALL=C.UTF-8 \
+	DISPLAY=:0.0 \
+	DISPLAY_WIDTH=1024 \
+	DISPLAY_HEIGHT=768
 
-# Configure user nobody to match unRAID's settings
- RUN \
- usermod -u 99 nobody && \
- usermod -g 100 nobody && \
- usermod -d /config nobody && \
- chown -R nobody:users /home
+# Install git, supervisor, VNC, & X11 packages
+RUN apk --update --upgrade add \
+	bash \
+	fluxbox \
+	git \
+	socat \
+	supervisor \
+	x11vnc \
+	xterm \
+	xvfb \
+    wine
 
-RUN apt-get update &&  apt-get -y install xvfb x11vnc xdotool wget supervisor wine
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+# Clone noVNC from github
+RUN git clone https://github.com/kanaka/noVNC.git /root/noVNC \
+	&& git clone https://github.com/kanaka/websockify /root/noVNC/utils/websockify \
+	&& rm -rf /root/noVNC/.git \
+	&& rm -rf /root/noVNC/utils/websockify/.git \
+	&& apk del git
 
-ENV WINEPREFIX /root/prefix32
-ENV WINEARCH win32
-ENV DISPLAY :0
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-WORKDIR /root/
-ADD novnc /root/novnc/
+# Modify the launch script 'ps -p'
+RUN sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/launch.sh
 
-# Expose Port
 EXPOSE 8080
+
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 
 # Prefix commands passed into bash so that they run in xvfb
 RUN cd /tmp && \
@@ -34,4 +44,3 @@ RUN cd /tmp && \
 #RUN wine64 "/tmp/lazarus-inst.exe" "/silent /nocancel /suppressmsgboxes=no"
 #ENTRYPOINT wine64 cmd
 
-CMD ["/usr/bin/supervisord"]
