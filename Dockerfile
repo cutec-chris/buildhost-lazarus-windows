@@ -15,7 +15,7 @@ ADD /apk /apk
 RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys
 RUN apk --no-cache --update add /apk/x11vnc-0.9.13-r0.apk
 RUN apk --no-cache add xvfb openbox xfce4-terminal supervisor sudo \
-        git wine
+        git wine curl
 
 # Clone noVNC from github
 RUN git clone https://github.com/kanaka/noVNC.git /root/noVNC \
