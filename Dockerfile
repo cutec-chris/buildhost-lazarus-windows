@@ -12,6 +12,7 @@ RUN apt-get update &&  apt-get -y install xvfb \
                        x11vnc \
                        xdotool \
                        wget \
+                       supervisor \
                        x11-apps \
                        wine-stable \
                        net-tools
