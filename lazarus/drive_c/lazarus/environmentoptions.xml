@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <EnvironmentOptions>
+    <Version Value="107" Lazarus="1.4.4"/>
+    <LazarusDirectory Value="C:\lazarus">
+    </LazarusDirectory>
+    <CompilerFilename Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\\fpc.exe">
+    </CompilerFilename>
+    <FPCSourceDirectory Value="$(LazarusDir)fpc\$(FPCVer)\source">
+    </FPCSourceDirectory>
+    <MakeFilename Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\\make.exe">
+    </MakeFilename>
+    <TestBuildDirectory Value="C:\users\root\Temp\">
+    </TestBuildDirectory>
+    <Debugger Class="TGDBMIDebugger"/>
+  </EnvironmentOptions>
+</CONFIG>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <EnvironmentOptions>
+    <Version Value="108" Lazarus="1.4.4"/>
+    <LazarusDirectory Value="C:\lazarus">
+      <History Count="1">
+        <Item1 Value="C:\lazarus\"/>
+      </History>
+    </LazarusDirectory>
+    <CompilerFilename Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe">
+      <History Count="2">
+        <Item1 Value="C:\fpc\2.6.4\bin\i386-win32\fpc.exe"/>
+        <Item2 Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe"/>
+      </History>
+    </CompilerFilename>
+    <FPCSourceDirectory Value="$(LazarusDir)fpc\$(FPCVer)\source"/>
+    <MakeFilename Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\make.exe">
+      <History Count="2">
+        <Item1 Value="C:\fpc\2.6.4\bin\i386-win32\make.exe"/>
+        <Item2 Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\make.exe"/>
+      </History>
+    </MakeFilename>
+    <TestBuildDirectory Value="C:\users\root\Temp\">
+      <History Count="3">
+        <Item1 Value="C:\users\root\Temp\"/>
+        <Item2 Value="C:\temp\"/>
+        <Item3 Value="C:\windows\temp\"/>
+      </History>
+    </TestBuildDirectory>
+    <Debugger Class="TGDBMIDebugger">
+      <WatchesDlg ColumnNameWidth="-1" ColumnValueWidth="-1"/>
+    </Debugger>
+    <Desktop>
+      <Desktop FormIdCount="31">
+        <FormIdList a1="PseudoTerminal" a2="Watches" a3="BreakPoints" a4="Locals" a5="CallStack" a6="EvaluateModify" a7="Registers" a8="Assembler" a9="DbgOutput" a10="Inspect" a11="DbgEvents" a12="Threads" a13="DbgHistory" a14="MainIDE" a15="SourceNotebook" a16="MessagesView" a17="UnitDependencies" a18="CodeExplorerView" a19="FPDocEditor" a20="ClipBrdHistory" a21="PkgGraphExplorer" a22="ProjectInspector" a23="EditorFileManager" a24="SearchResults" a25="AnchorEditor" a26="TabOrderEditor" a27="CodeBrowser" a28="IssueBrowser" a29="JumpHistory" a30="ComponentList" a31="ObjectInspectorDlg"/>
+      </Desktop>
+      <PseudoTerminal>
+        <Caption Value="PseudoTerminal"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </PseudoTerminal>
+      <Watches>
+        <Caption Value="Watches"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Watches>
+      <BreakPoints>
+        <Caption Value="BreakPoints"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </BreakPoints>
+      <Locals>
+        <Caption Value="Locals"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Locals>
+      <CallStack>
+        <Caption Value="CallStack"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </CallStack>
+      <EvaluateModify>
+        <Caption Value="EvaluateModify"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </EvaluateModify>
+      <Registers>
+        <Caption Value="Registers"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Registers>
+      <Assembler>
+        <Caption Value="Assembler"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Assembler>
+      <DbgOutput>
+        <Caption Value="DbgOutput"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </DbgOutput>
+      <Inspect>
+        <Caption Value="Inspect"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Inspect>
+      <DbgEvents>
+        <Caption Value="DbgEvents"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </DbgEvents>
+      <Threads>
+        <Caption Value="Threads"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </Threads>
+      <DbgHistory>
+        <Caption Value="DbgHistory"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </DbgHistory>
+      <MainIDE>
+        <Caption Value="MainIDE"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+        <CustomPosition Width="1024" Height="79"/>
+        <Visible Value="True"/>
+      </MainIDE>
+      <SourceNotebook>
+        <Caption Value="Source Editor"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+        <CustomPosition Left="250" Top="104" Width="750" Height="464"/>
+      </SourceNotebook>
+      <MessagesView>
+        <Caption Value="Messages"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+        <CustomPosition Left="250" Top="593" Width="750" Height="100"/>
+        <Visible Value="True"/>
+      </MessagesView>
+      <UnitDependencies>
+        <Caption Value="UnitDependencies"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </UnitDependencies>
+      <CodeExplorerView>
+        <Caption Value="CodeExplorerView"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </CodeExplorerView>
+      <FPDocEditor>
+        <Caption Value="FPDocEditor"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </FPDocEditor>
+      <ClipBrdHistory>
+        <Caption Value="ClipBrdHistory"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </ClipBrdHistory>
+      <PkgGraphExplorer>
+        <Caption Value="PkgGraphExplorer"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </PkgGraphExplorer>
+      <ProjectInspector>
+        <Caption Value="ProjectInspector"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </ProjectInspector>
+      <EditorFileManager>
+        <Caption Value="EditorFileManager"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </EditorFileManager>
+      <SearchResults>
+        <Caption Value="SearchResults"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </SearchResults>
+      <AnchorEditor>
+        <Caption Value="AnchorEditor"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </AnchorEditor>
+      <TabOrderEditor>
+        <Caption Value="TabOrderEditor"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </TabOrderEditor>
+      <CodeBrowser>
+        <Caption Value="CodeBrowser"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </CodeBrowser>
+      <IssueBrowser>
+        <Caption Value="IssueBrowser"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </IssueBrowser>
+      <JumpHistory>
+        <Caption Value="JumpHistory"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </JumpHistory>
+      <ComponentList>
+        <Caption Value="ComponentList"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+      </ComponentList>
+      <ObjectInspectorDlg>
+        <Caption Value="Object Inspector"/>
+        <WindowPlacement Value="RestoreWindowGeometry"/>
+        <WindowState Value="Normal"/>
+        <CustomPosition Top="104" Width="230" Height="514"/>
+        <Visible Value="True"/>
+      </ObjectInspectorDlg>
+      <Dialogs Count="2">
+        <Dialog1>
+          <Name Value="TLazFindInFilesDialog"/>
+          <Size Width="0" Height="0"/>
+        </Dialog1>
+        <Dialog2>
+          <Name Value="TLazFindReplaceDialog"/>
+          <Size Width="0" Height="0"/>
+        </Dialog2>
+      </Dialogs>
+    </Desktop>
+    <FormEditor GuideLineColorLeftTop="16711680" GuideLineColorRightBottom="32768">
+      <Rubberband>
+        <SelectionColor Value="8388608"/>
+        <CreationColor Value="128"/>
+      </Rubberband>
+    </FormEditor>
+    <Recent AlreadyPopulated="True"/>
+    <ExternalTools Version="3"/>
+    <LastCalledByLazarusFullPath Value="C:\lazarus\lazarus.exe"/>
+    <BackupProjectFiles AdditionalExtension="bak" MaxCounter="9"/>
+    <BackupOtherFiles AdditionalExtension="bak" MaxCounter="9"/>
+    <DebuggerFilename Value="$(LazarusDir)\mingw\$(TargetCPU)-$(TargetOS)\bin\gdb.exe"/>
+  </EnvironmentOptions>
+  <ObjectInspectorOptions ShowHints="False" InfoBoxHeight="50">
+    <Version Value="3"/>
+  </ObjectInspectorOptions>
+</CONFIG>

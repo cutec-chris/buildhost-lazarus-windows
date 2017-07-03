@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG Count="2" Position="Top" Visible="True" Profile="15">
+  <Button01 Value="IDEMainMenu/Search/itmJumpings/itmJumpBack"/>
+  <Button02 Value="IDEMainMenu/Search/itmJumpings/itmJumpForward"/>
+</CONFIG>
