@@ -5,3 +5,7 @@
 xterm &
 bash -c $1 $2 $3
 #wine $1 $2 $3 $4 $5 $6
+killall xterm
+killall launch.sh
+killall x11vnc
+killall Xvfb
