@@ -12,21 +12,18 @@ RUN apt-get update &&  apt-get -y install xvfb \
                        x11vnc \
                        xdotool \
                        wget \
-                       supervisor \
                        x11-apps \
                        wine-stable \
                        net-tools
 RUN dpkg --add-architecture i386 && apt-get update && apt-get -y install wine32
 RUN rm -rf /var/lib/apt/lists/*
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 ENV DISPLAY :0.0
 
 WORKDIR /root/
 ADD novnc /root/novnc/
+ADD lazarus /root/.wine/
 COPY startup.sh /usr/local/bin/startup.sh
-COPY install.sh /root/install.sh
-RUN bash /root/install.sh
 
 # Expose Port
 EXPOSE 8080
