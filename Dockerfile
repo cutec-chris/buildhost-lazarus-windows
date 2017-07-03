@@ -29,7 +29,7 @@ COPY startup.sh /usr/local/bin/startup.sh
 # Expose Port
 EXPOSE 8080
 
-ENV WINEPATH "C:/lazarus;c:\lazarus\mingw\i386-win32\bin;c:/lazarus/fpc/3.0.2/bin/i386-win32;c:/Program Files (x86)/Git/bin"
+ENV WINEPATH "C:/lazarus;c:\lazarus\mingw\i386-win32\bin;c:/lazarus/fpc/2.6.4/bin/i386-win32;c:/Program Files (x86)/Git/bin"
 
 ENTRYPOINT ["bash","/usr/local/bin/startup.sh"]
 CMD ["dir"]
